@@ -34,22 +34,6 @@ function handleSubmit(event) {
     }
   };
 
-  // const updateUI = async () => {
-  //   const req = await fetch("http://localhost:8081/article");
-
-  //   try {
-  //     const updatedData = await req.json();
-  //     console.log(updatedData);
-  //     model.innerHTML = `Model: ${updatedData.model}`;
-  //     confidence.innerHTML = `Confidence: ${updatedData.confidence}`;
-  //     subjectivity.innerHTML = `Subjectivity: ${updatedData.subjectivity}`;
-  //     irony.innerHTML = `Irony: ${updatedData.irony}`;
-  //     return updatedData;
-  //   } catch (error) {
-  //     console.log("Error", error);
-  //   }
-  // };
-
   if (Client.is_url(userUrl)) {
     validUrl.style.visibility = "hidden";
     sendURL(userUrl);
